@@ -8,7 +8,7 @@ SOURCE_COPY_IN.debian := source-debian-copy-in
 SOURCE_COPY_IN.qubuntu := source-debian-copy-in
 SOURCE_COPY_IN := $(SOURCE_COPY_IN.$(DISTRIBUTION))
 
-source-debian-copy-in: VERSION = $(shell cat $(ORIG_SRC)/version)
+source-debian-copy-in: VERSION = $(file <$(ORIG_SRC)/version)
 source-debian-copy-in: ORIG_FILE = $(CHROOT_DIR)/$(DIST_SRC)/xcffib_$(VERSION).orig.tar.gz
 source-debian-copy-in: SRC_FILE  = $(ORIG_SRC)/xcffib-$(VERSION).tar.gz
 source-debian-copy-in:
