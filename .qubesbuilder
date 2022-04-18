@@ -1,0 +1,8 @@
+vm-buster:
+  deb:
+    build:
+    - debian-pkg/debian
+source:
+  files:
+  - url: https://files.pythonhosted.org/packages/source/x/xcffib/xcffib-0.8.1.tar.gz
+    sha256: xcffib-0.8.1.tar.gz.sha256
